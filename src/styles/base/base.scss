@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'reset';
+
+body{
+    font-family: $primary_font;
+    font-size: 16px;
+}
+
+.App{
+    min-height: 100vh;
+    &.light_theme{
+        color: $darkest_blue;
+    }
+    &.dark_theme{
+        background: $darkest_blue;
+        color: $white;
+    }
+}

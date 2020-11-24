@@ -1,0 +1,29 @@
+.header{
+    padding-top: 40px;
+    height: 200px;
+    .App.light_theme &{
+        background: $light_th_header_bg;
+    }
+    .App.dark_theme &{
+        background: $dark_th_header_bg;
+    }
+    h1{
+        font-size: em(28px);
+    }
+    &__left{
+        p{
+            font:{
+                size: em(14px);
+                //weight: 700;
+            }
+            margin-top: 8px;
+            letter-spacing: 0.06em;
+            .App.light_theme &{
+                color: $light_th_gray_text;
+            }
+            .App.dark_theme &{
+                color: $light_toggle;
+            }
+        }
+    }
+}
