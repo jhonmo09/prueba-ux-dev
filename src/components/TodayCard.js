@@ -8,7 +8,7 @@ import iconUp from '../images/icon-up.svg'
 import iconDown from '../images/icon-down.svg'
 
 
-const GeneralCard = (props) => {
+const TodayCard = (props) => {
     const [generalActivityList, setGeneralActivityList] = useState([])
 
     useEffect(() => {
@@ -20,7 +20,7 @@ const GeneralCard = (props) => {
     
     let today_class;
     let ind_icon;
-    if(props.data.followersToday <= 0){
+    if(props.data.accountMetricIncrement <= 0){
         today_class = 'less';
         ind_icon = iconDown;
     }else{
@@ -28,7 +28,7 @@ const GeneralCard = (props) => {
         ind_icon = iconUp;
     }
 
-    const fnumber = props.data.followersToday
+    const fnumber = props.data.accountMetricIncrement
     //fnumber.toString().replace(/^-/,'')
 
     const openPopup = () => {
@@ -37,21 +37,22 @@ const GeneralCard = (props) => {
     
     return(
         
-        <div onClick={openPopup} className={`flex-layout direction-col align-items-center justify-center card card--general ${props.data.accountColor}`}>
-            <div className="flex-layout justify-center align-items-center">
+        <div onClick={openPopup} className={`flex-layout direction-col justify-between card card--today ${props.data.accountColor}`}>
+            <div className="flex-layout justify-between align-items-center">
+                <p className="card__title">{props.data.accountMetricTitle}</p>
                 <img src={img.default} />
-                <p className="card__account">{props.data.accountName}</p>
             </div>
-            <h3 className="card__number">{props.data.followersNumber}</h3>
-            <h3 className="card__label">{props.data.followersLabel}</h3>
 
-            <div className={`card__today ${today_class}`}>
-                <img src={ind_icon} />
-                <span>{fnumber} Today</span>
-            </div> 
+            <div className="flex-layout justify-between align-items-end">
+                <p className="card__number">{props.data.accountMetricValue}</p>
+                <div className={`card__increment ${today_class}`}>
+                    <img src={ind_icon} />
+                    <span>{fnumber}%</span>
+                </div> 
+            </div>
         </div>
     )
 }
 
 
-export default GeneralCard
+export default TodayCard

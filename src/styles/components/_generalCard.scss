@@ -8,6 +8,9 @@
     transition: all 0.4s;
     .App.dark_theme &{
         background: $dark_th_card_bg;
+        &:hover{
+            background: lighten($dark_th_card_bg, 3%);
+        }
     }
 
     &:hover{
@@ -65,5 +68,37 @@
     }
     &__today{
         margin-top: 20px;
+        img, span{
+            vertical-align: middle;
+        }
+        img{
+            margin-right: 6px;
+        }
+        span{
+            font-size: em(12px);
+            font-weight: 700;
+        }
+        &.more{
+            color: $lime_green;
+        }
+        &.less{
+            color: $bright_red;
+        }
+    }
+}
+
+@media screen and (max-width: $break-m){
+    .card{
+        &__number{
+            font-size: em(42px);
+        }
+    }
+}
+
+@media screen and (max-width: $break-s){
+    .card{
+        .flex-layout{
+            flex-direction: row;
+        }
     }
 }

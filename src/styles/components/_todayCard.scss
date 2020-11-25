@@ -1,0 +1,43 @@
+.card{
+    &--today{
+        height: 120px;
+        padding: 25px;
+        .card__title{
+            font-size: em(14px);
+            font-weight: 700;
+            color: $light_th_gray_text;
+            .App.dark_theme &{
+                color: $dark_th_blue_text;
+            }
+        }
+        .card__number{
+            font-size: em(32px);
+        }
+        .card__increment{
+            img, span{
+                vertical-align: middle;
+            }
+            img{
+                margin-right: 6px;
+            }
+            span{
+                font-size: em(12px);
+                font-weight: 700;
+            }
+            &.more{
+                color: $lime_green;
+            }
+            &.less{
+                color: $bright_red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-m){
+    .card--today{
+        .card__number{
+            font-size: em(24px);
+        }
+    }
+}

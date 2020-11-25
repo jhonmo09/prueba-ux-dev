@@ -1,0 +1,38 @@
+.today{
+    margin-top: 50px;
+    h2{
+        font-size: em(24px);
+        color: $light_th_gray_text;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &__row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: $break-s){
+    .today{
+        margin-top: 30px;
+        &__row.flex-layout{
+            flex-direction: row;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &__col{
+            width: 50%;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+    
+}

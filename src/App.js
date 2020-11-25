@@ -4,6 +4,7 @@ import generalInfo from './services/general-info.service'
 
 import Overview from './components/Overview'
 import Header from './components/Header'
+import Today from './components/Today'
 
 import './styles/App.scss';
 
@@ -25,8 +26,9 @@ const App = () => {
   return(
   <div className={`App ${darkClass}`}>
     <Header/>
-
-    <Overview /> 
+    <Overview />
+    <Today />
+    
   </div>
   )
 }

@@ -53,11 +53,62 @@ export default {
             ],
             today: [
                 {
+                    socialProviderName: "Facebook",
                     accountMetricTitle: "Page Views",
                     accountMetricValue: 87,
                     accountMetricIncrement: 3,
-                    accountIcon: "icon-fb"
-                }
+                    accountIcon: "icon-facebook.svg"
+                },
+                {
+                    socialProviderName: "Facebook",
+                    accountMetricTitle: "Likes",
+                    accountMetricValue: 543,
+                    accountMetricIncrement: 3,
+                    accountIcon: "icon-facebook.svg"
+                },
+                {
+                    socialProviderName: "Instagram",
+                    accountMetricTitle: "Likes",
+                    accountMetricValue: 1234,
+                    accountMetricIncrement: 3,
+                    accountIcon: "icon-instagram.svg"
+                },
+                {
+                    socialProviderName: "Instagram",
+                    accountMetricTitle: "Profile views",
+                    accountMetricValue: 326,
+                    accountMetricIncrement: -8,
+                    accountIcon: "icon-instagram.svg"
+                },
+                {
+                    socialProviderName: "Twitter",
+                    accountMetricTitle: "Retweets",
+                    accountMetricValue: 326,
+                    accountMetricIncrement: -8,
+                    accountIcon: "icon-twitter.svg"
+                },
+                {
+                    socialProviderName: "Instagram",
+                    accountMetricTitle: "Likes",
+                    accountMetricValue: 1234,
+                    accountMetricIncrement: 3,
+                    accountIcon: "icon-instagram.svg"
+                },
+                {
+                    socialProviderName: "Instagram",
+                    accountMetricTitle: "Profile views",
+                    accountMetricValue: 326,
+                    accountMetricIncrement: -8,
+                    accountIcon: "icon-instagram.svg"
+                },
+                {
+                    socialProviderName: "Youtube",
+                    accountMetricTitle: "Retweets",
+                    accountMetricValue: 326,
+                    accountMetricIncrement: -8,
+                    accountIcon: "icon-youtube.svg"
+                },
+
             ]
         }
     }

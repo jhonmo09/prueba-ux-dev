@@ -9,3 +9,19 @@
         padding: 0 15px;
     }
 }
+
+@media screen and (max-width: $break-s){
+    .overview{
+        margin-top: -80px;
+        &__row.flex-layout{
+            flex-direction: row;
+            overflow: auto;
+            flex-wrap: nowrap;
+
+        }
+        &__col{
+            width: 280px;
+            flex: 1 0 auto;
+        }
+    }
+}

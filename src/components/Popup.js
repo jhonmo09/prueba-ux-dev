@@ -65,13 +65,15 @@ const Popup = (props) => {
 
                 <div className="popup__chart">
                     <h3>May 4 - May 13</h3>
-                    <LineChart width={960} height={200} data={graph_array} margin={{top: 5, right: 30, left: 20, bottom: 5,}}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Line activeDot={{ r: 8 }} type="monotone" dataKey="New Followers" stroke="#aeb3cb" />
-                    </LineChart>
+                    <div className="chart_inner">
+                        <LineChart width={960} height={200} data={graph_array} margin={{top: 5, right: 30, left: 20, bottom: 5,}}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Line activeDot={{ r: 8 }} type="monotone" dataKey="New Followers" stroke="#aeb3cb" />
+                        </LineChart>
+                    </div>
                 </div>
             </div>
         </div>
