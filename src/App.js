@@ -26,9 +26,7 @@ const App = () => {
   <div className={`App ${darkClass}`}>
     <Header/>
 
-    <section className="overview">
-      <Overview /> 
-    </section>
+    <Overview /> 
   </div>
   )
 }

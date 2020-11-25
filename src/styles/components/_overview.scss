@@ -1,0 +1,11 @@
+.overview{
+    margin-top: -105px;
+    &__row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__col{
+        width: 25%;
+        padding: 0 15px;
+    }
+}

@@ -31,7 +31,7 @@ const Header = () => {
                         <p>Total Followers: {generalInfoList.totalFollowers}</p>
                     </div>
                     <div className="header__right">
-                        <div className="dark_toggle" onClick={toggleDark}>Toggle</div>
+                        <div className="header__dark-mode" onClick={toggleDark}>Dark Mode</div>
                     </div>
                 </div>
             </header>

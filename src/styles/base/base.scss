@@ -8,6 +8,7 @@ body{
 
 .App{
     min-height: 100vh;
+    transition: background 0.4s;
     &.light_theme{
         color: $darkest_blue;
     }

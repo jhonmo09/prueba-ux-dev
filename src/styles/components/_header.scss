@@ -1,6 +1,7 @@
 .header{
     padding-top: 40px;
-    height: 200px;
+    height: 240px;
+    transition: background 0.4s;
     .App.light_theme &{
         background: $light_th_header_bg;
     }
@@ -14,15 +15,68 @@
         p{
             font:{
                 size: em(14px);
-                //weight: 700;
+                weight: 600;
             }
             margin-top: 8px;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.02em;
             .App.light_theme &{
                 color: $light_th_gray_text;
             }
             .App.dark_theme &{
                 color: $light_toggle;
+            }
+        }
+    }
+    &__dark-mode{
+        padding-right: 60px;
+        position: relative;
+        color: $light_toggle;
+        cursor: pointer;
+        line-height: 24px;
+        font-size: em(14px);
+        font-weight: 700;
+        margin-top: 10px;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 24px;
+            border-radius: 12px;
+            background: $light_toggle;
+            display: block;
+            right: 0;
+            top: 0;
+            transition: all 0.4s;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: $light_th_header_bg;
+            top: 3px;
+            
+            transition: all 0.4s;
+            right: 3px;
+        }
+        &:hover{
+            &:after{
+                right: 6px;
+            }
+        }
+        .App.dark_theme &{
+            &:before{
+                background: $dark_toggle;
+            }
+            &:after{
+                right: 27px;
+                background: $darkest_blue;
+            }
+            &:hover{
+                &:after{
+                    right: 24px;
+                }
             }
         }
     }
