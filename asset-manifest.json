@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/prueba-ux-dev/static/css/main.b7c76c42.chunk.css",
+    "main.js": "/prueba-ux-dev/static/js/main.823aacb6.chunk.js",
+    "main.js.map": "/prueba-ux-dev/static/js/main.823aacb6.chunk.js.map",
+    "runtime-main.js": "/prueba-ux-dev/static/js/runtime-main.c69195dc.js",
+    "runtime-main.js.map": "/prueba-ux-dev/static/js/runtime-main.c69195dc.js.map",
+    "static/js/2.bf1ae411.chunk.js": "/prueba-ux-dev/static/js/2.bf1ae411.chunk.js",
+    "static/js/2.bf1ae411.chunk.js.map": "/prueba-ux-dev/static/js/2.bf1ae411.chunk.js.map",
+    "static/js/3.2d6c6d27.chunk.js": "/prueba-ux-dev/static/js/3.2d6c6d27.chunk.js",
+    "static/js/3.2d6c6d27.chunk.js.map": "/prueba-ux-dev/static/js/3.2d6c6d27.chunk.js.map",
+    "index.html": "/prueba-ux-dev/index.html",
+    "static/css/main.b7c76c42.chunk.css.map": "/prueba-ux-dev/static/css/main.b7c76c42.chunk.css.map",
+    "static/js/2.bf1ae411.chunk.js.LICENSE.txt": "/prueba-ux-dev/static/js/2.bf1ae411.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c69195dc.js",
+    "static/js/2.bf1ae411.chunk.js",
+    "static/css/main.b7c76c42.chunk.css",
+    "static/js/main.823aacb6.chunk.js"
+  ]
+}
